@@ -1,7 +1,7 @@
 @echo off
 set "sourceFolder=.\obiSoft_client"
 set "destinationFolder=C:\obi\client"
-
+set "originalFolder=%CD%"
 if not exist "%sourceFolder%" (
     echo Source folder does not exist.
     exit /b
@@ -18,5 +18,6 @@ pushd "%destinationFolder%"
 npm install
 popd
 
+cd %originalFolder%
 
 call install3.bat
