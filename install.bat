@@ -15,4 +15,8 @@ xcopy "%sourceFolder%" "%destinationFolder%" /E /I /Y
 echo Folder copied successfully.
 
 
+cd C:\obi
+
+npm install
+
 call install2.bat
