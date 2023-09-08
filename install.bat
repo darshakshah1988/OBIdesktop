@@ -15,8 +15,8 @@ xcopy "%sourceFolder%" "%destinationFolder%" /E /I /Y
 echo Folder copied successfully.
 
 
-cd C:\obi
-
+pushd "%destinationFolder%"
 npm install
+popd
 
 call install2.bat

@@ -14,9 +14,9 @@ if not exist "%destinationFolder%" (
 xcopy "%sourceFolder%" "%destinationFolder%" /E /I /Y
 echo Folder copied successfully.
 
-cd C:\obi\client
-
+pushd "%destinationFolder%"
 npm install
+popd
 
 
 call install3.bat
